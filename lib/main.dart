@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.greenAccent,
+          centerTitle: true,
           title: const Text('Flutter Basics'),
         ),
         body: const Center(
