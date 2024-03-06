@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.greenAccent,
@@ -20,6 +21,10 @@ class MyApp extends StatelessWidget {
         body: const Center(
           child: Text('Hello World!'),
         ),
+        floatingActionButton: (FloatingActionButton(
+          onPressed: () => debugPrint('clicked'),
+          child: Icon(Icons.ac_unit),
+        )),
       ),
     );
   }
